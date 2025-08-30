@@ -1,0 +1,348 @@
+/* Smart Chat Widget Styles */
+
+.smart-chat-widget {
+    position: fixed;
+    z-index: 999999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    direction: rtl;
+}
+
+/* Position Classes */
+.smart-chat-bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.smart-chat-bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.smart-chat-top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.smart-chat-top-left {
+    top: 20px;
+    left: 20px;
+}
+
+/* Toggle Button */
+.smart-chat-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.smart-chat-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.smart-chat-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Chat Window */
+.smart-chat-window {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 350px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: smart-chat-slide-up 0.3s ease;
+}
+
+.smart-chat-top-right .smart-chat-window,
+.smart-chat-top-left .smart-chat-window {
+    bottom: auto;
+    top: 80px;
+}
+
+.smart-chat-bottom-left .smart-chat-window,
+.smart-chat-top-left .smart-chat-window {
+    right: auto;
+    left: 0;
+}
+
+@keyframes smart-chat-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.smart-chat-header {
+    padding: 16px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.smart-chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.smart-chat-close {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.smart-chat-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Messages */
+.smart-chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f8f9fa;
+}
+
+.smart-chat-message {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+.smart-chat-user {
+    flex-direction: row-reverse;
+}
+
+.smart-chat-bot {
+    flex-direction: row;
+}
+
+.smart-chat-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    flex-shrink: 0;
+}
+
+.smart-chat-bubble {
+    background: white;
+    padding: 12px 16px;
+    border-radius: 18px;
+    max-width: 70%;
+    word-wrap: break-word;
+    line-height: 1.4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.smart-chat-user .smart-chat-bubble {
+    background: #007cba;
+    color: white;
+}
+
+.smart-chat-bot .smart-chat-bubble {
+    background: white;
+    color: #333;
+}
+
+/* Input */
+.smart-chat-input {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e9ecef;
+}
+
+.smart-chat-form {
+    display: flex;
+    gap: 8px;
+}
+
+.smart-chat-text-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e9ecef;
+    border-radius: 24px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.smart-chat-text-input:focus {
+    border-color: #007cba;
+}
+
+.smart-chat-send {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.smart-chat-send:hover {
+    transform: scale(1.05);
+}
+
+.smart-chat-send:active {
+    transform: scale(0.95);
+}
+
+/* Typing Indicator */
+.smart-chat-typing {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.smart-chat-typing-indicator {
+    display: flex;
+    gap: 4px;
+}
+
+.smart-chat-typing-indicator span {
+    width: 8px;
+    height: 8px;
+    background: #007cba;
+    border-radius: 50%;
+    animation: smart-chat-bounce 1.4s infinite ease-in-out;
+}
+
+.smart-chat-typing-indicator span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.smart-chat-typing-indicator span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes smart-chat-bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+.smart-chat-typing-text {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Sources */
+.smart-chat-sources {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.smart-chat-sources a {
+    color: #007cba;
+    text-decoration: none;
+}
+
+.smart-chat-sources a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .smart-chat-window {
+        width: calc(100vw - 40px);
+        height: calc(100vh - 120px);
+        bottom: 80px;
+        right: 20px;
+    }
+    
+    .smart-chat-bottom-left .smart-chat-window,
+    .smart-chat-top-left .smart-chat-window {
+        right: 20px;
+        left: auto;
+    }
+}
+
+/* RTL Support */
+.smart-chat-widget[data-rtl="true"] {
+    direction: rtl;
+}
+
+.smart-chat-widget[data-rtl="true"] .smart-chat-message {
+    flex-direction: row-reverse;
+}
+
+.smart-chat-widget[data-rtl="true"] .smart-chat-bubble {
+    text-align: right;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .smart-chat-window {
+        background: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    .smart-chat-messages {
+        background: #2d2d2d;
+    }
+    
+    .smart-chat-bubble {
+        background: #3a3a3a;
+        color: #ffffff;
+    }
+    
+    .smart-chat-input {
+        background: #1a1a1a;
+        border-top-color: #3a3a3a;
+    }
+    
+    .smart-chat-text-input {
+        background: #2d2d2d;
+        border-color: #3a3a3a;
+        color: #ffffff;
+    }
+    
+    .smart-chat-typing {
+        background: #1a1a1a;
+        border-top-color: #3a3a3a;
+    }
+}
