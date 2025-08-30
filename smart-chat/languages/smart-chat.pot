@@ -1,0 +1,307 @@
+# Copyright (C) 2024 hoseinmos
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Chat 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/hoseinmos/smart-chat\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: includes/class-admin.php:45
+msgid "Smart Chat Settings"
+msgstr "تنظیمات چت هوشمند"
+
+#: includes/class-admin.php:46
+msgid "Smart Chat"
+msgstr "چت هوشمند"
+
+#: includes/class-admin.php:65
+msgid "تنظیمات عمومی"
+msgstr "General Settings"
+
+#: includes/class-admin.php:70
+msgid "فعال"
+msgstr "Enabled"
+
+#: includes/class-admin.php:78
+msgid "جایگاه آیکن"
+msgstr "Icon Position"
+
+#: includes/class-admin.php:82
+msgid "پایین راست"
+msgstr "Bottom Right"
+
+#: includes/class-admin.php:83
+msgid "پایین چپ"
+msgstr "Bottom Left"
+
+#: includes/class-admin.php:84
+msgid "بالا راست"
+msgstr "Top Right"
+
+#: includes/class-admin.php:85
+msgid "بالا چپ"
+msgstr "Top Left"
+
+#: includes/class-admin.php:92
+msgid "پیام خوشامد"
+msgstr "Welcome Message"
+
+#: includes/class-admin.php:100
+msgid "متن placeholder"
+msgstr "Placeholder Text"
+
+#: includes/class-admin.php:108
+msgid "منابع داده"
+msgstr "Data Sources"
+
+#: includes/class-admin.php:113
+msgid "حالت چت"
+msgstr "Chat Mode"
+
+#: includes/class-admin.php:118
+msgid "فقط داخلی"
+msgstr "Internal Only"
+
+#: includes/class-admin.php:119
+msgid "فقط API خارجی"
+msgstr "External API Only"
+
+#: includes/class-admin.php:120
+msgid "ترکیبی"
+msgstr "Hybrid"
+
+#: includes/class-admin.php:127
+msgid "تعداد نتایج داخلی"
+msgstr "Internal Results Count"
+
+#: includes/class-admin.php:135
+msgid "وزن API خارجی (%)"
+msgstr "External API Weight (%)"
+
+#: includes/class-admin.php:143
+msgid "ارتباط با API خارجی"
+msgstr "External API Connection"
+
+#: includes/class-admin.php:148
+msgid "نوع Provider"
+msgstr "Provider Type"
+
+#: includes/class-admin.php:152
+msgid "Mock (تست)"
+msgstr "Mock (Test)"
+
+#: includes/class-admin.php:154
+msgid "سفارشی"
+msgstr "Custom"
+
+#: includes/class-admin.php:161
+msgid "کلید API"
+msgstr "API Key"
+
+#: includes/class-admin.php:169
+msgid "آدرس Endpoint"
+msgstr "Endpoint URL"
+
+#: includes/class-admin.php:177
+msgid "ظاهر"
+msgstr "Appearance"
+
+#: includes/class-admin.php:182
+msgid "رنگ اصلی"
+msgstr "Primary Color"
+
+#: includes/class-admin.php:190
+msgid "حریم خصوصی و لاگ‌ها"
+msgstr "Privacy & Logs"
+
+#: includes/class-admin.php:195
+msgid "فعال‌سازی لاگ‌ها"
+msgstr "Enable Logs"
+
+#: includes/class-admin.php:203
+msgid "مدت نگهداری لاگ (روز)"
+msgstr "Log Retention (Days)"
+
+#: includes/class-admin.php:211
+msgid "محدودیت درخواست (در دقیقه)"
+msgstr "Rate Limit (per minute)"
+
+#: includes/class-admin.php:230
+msgid "تست افزونه"
+msgstr "Plugin Test"
+
+#: includes/class-admin.php:231
+msgid "برای تست عملکرد افزونه، یک پیام ارسال کنید:"
+msgstr "To test the plugin functionality, send a message:"
+
+#: includes/class-admin.php:233
+msgid "پیام تست..."
+msgstr "Test message..."
+
+#: includes/class-admin.php:234
+msgid "ارسال"
+msgstr "Send"
+
+#: includes/class-admin.php:280
+msgid "تنظیمات عمومی افزونه چت هوشمند"
+msgstr "General settings for Smart Chat plugin"
+
+#: includes/class-admin.php:285
+msgid "تنظیمات منابع داده و نحوه پاسخگویی"
+msgstr "Data source settings and response methods"
+
+#: includes/class-admin.php:290
+msgid "تنظیمات ارتباط با سرویس‌های چت‌بات خارجی"
+msgstr "Settings for external chatbot service connections"
+
+#: includes/class-admin.php:295
+msgid "تنظیمات ظاهری و رنگ‌بندی"
+msgstr "Appearance and color settings"
+
+#: includes/class-admin.php:300
+msgid "تنظیمات حریم خصوصی و لاگ‌گیری"
+msgstr "Privacy and logging settings"
+
+#: includes/class-admin.php:320
+msgid "خطای امنیتی"
+msgstr "Security Error"
+
+#: includes/class-admin.php:325
+msgid "محدودیت درخواست تجاوز شده است"
+msgstr "Rate limit exceeded"
+
+#: includes/class-admin.php:330
+msgid "خطا در ارتباط با سرویس خارجی"
+msgstr "Error connecting to external service"
+
+#: includes/class-admin.php:335
+msgid "متأسفانه پاسخی برای سوال شما پیدا نشد. لطفاً سوال خود را به شکل دیگری مطرح کنید."
+msgstr "Sorry, no answer found for your question. Please rephrase your question."
+
+#: includes/class-admin.php:340
+msgid "بر اساس جستجو در محتوای سایت، موارد زیر را پیدا کردم:"
+msgstr "Based on search in site content, I found the following:"
+
+#: includes/class-admin.php:345
+msgid "مشاهده کامل:"
+msgstr "View full:"
+
+#: includes/class-admin.php:350
+msgid "متأسفانه پاسخی برای سوال شما پیدا نشد."
+msgstr "Sorry, no answer found for your question."
+
+#: includes/class-admin.php:355
+msgid "متأسفانه متوجه سوال شما نشدم. لطفاً سوال خود را به شکل دیگری مطرح کنید."
+msgstr "Sorry, I didn't understand your question. Please rephrase your question."
+
+#: includes/class-admin.php:356
+msgid "این سوال خارج از حوزه تخصص من است. لطفاً سوال دیگری بپرسید."
+msgstr "This question is outside my area of expertise. Please ask another question."
+
+#: includes/class-admin.php:357
+msgid "متأسفانه اطلاعات کافی برای پاسخ به این سوال ندارم."
+msgstr "Sorry, I don't have enough information to answer this question."
+
+#: includes/class-admin.php:358
+msgid "لطفاً سوال خود را واضح‌تر مطرح کنید تا بتوانم کمکتان کنم."
+msgstr "Please ask your question more clearly so I can help you."
+
+#: includes/class-admin.php:359
+msgid "این provider برای تست و توسعه افزونه استفاده می‌شود. پاسخ‌های ساده و از پیش تعریف شده ارائه می‌دهد."
+msgstr "This provider is used for testing and developing the plugin. It provides simple and predefined responses."
+
+#: includes/class-admin.php:360
+msgid "سلام! چطور می‌تونم کمکتون کنم؟"
+msgstr "Hello! How can I help you?"
+
+#: includes/class-admin.php:361
+msgid "ممنون، من خوبم. امیدوارم شما هم خوب باشید!"
+msgstr "Thank you, I'm fine. I hope you're well too!"
+
+#: includes/class-admin.php:362
+msgid "بله، حتماً. لطفاً سوال خود را مطرح کنید."
+msgstr "Yes, definitely. Please ask your question."
+
+#: includes/class-admin.php:363
+msgid "من اینجا هستم تا کمکتان کنم. چه کمکی از دستم برمی‌آید؟"
+msgstr "I'm here to help you. What can I help you with?"
+
+#: includes/class-admin.php:364
+msgid "خواهش می‌کنم! خوشحالم که توانستم کمکتان کنم."
+msgstr "You're welcome! I'm glad I could help you."
+
+#: includes/class-admin.php:365
+msgid "خداحافظ! امیدوارم باز هم ببینمتان."
+msgstr "Goodbye! I hope to see you again."
+
+#: includes/class-admin.php:366
+msgid "چت هوشمند"
+msgstr "Smart Chat"
+
+#: includes/class-admin.php:367
+msgid "بستن چت"
+msgstr "Close Chat"
+
+#: includes/class-admin.php:368
+msgid "پیام خود را بنویسید"
+msgstr "Write your message"
+
+#: includes/class-admin.php:369
+msgid "در حال تایپ..."
+msgstr "Typing..."
+
+#: includes/class-admin.php:370
+msgid "متأسفانه خطایی رخ داده است. لطفاً دوباره تلاش کنید."
+msgstr "Sorry, an error occurred. Please try again."
+
+#: includes/class-admin.php:371
+msgid "خطا در ارتباط با سرور"
+msgstr "Error connecting to server"
+
+#: includes/class-admin.php:372
+msgid "لطفاً پیام تست وارد کنید"
+msgstr "Please enter a test message"
+
+#: includes/class-admin.php:373
+msgid "در حال ارسال پیام..."
+msgstr "Sending message..."
+
+#: includes/class-admin.php:374
+msgid "پاسخ دریافت شد:"
+msgstr "Response received:"
+
+#: includes/class-admin.php:375
+msgid "منابع:"
+msgstr "Sources:"
+
+#: includes/class-admin.php:376
+msgid "خطا:"
+msgstr "Error:"
+
+#: includes/class-admin.php:377
+msgid "خطای نامشخص"
+msgstr "Unknown error"
+
+#: includes/class-admin.php:378
+msgid "ارسال"
+msgstr "Send"
+
+#: includes/class-admin.php:379
+msgid "تنظیمات ذخیره شدند"
+msgstr "Settings saved"
+
+#: includes/class-admin.php:380
+msgid "برای استفاده از حالت خارجی یا ترکیبی، لطفاً کلید API را وارد کنید"
+msgstr "To use external or hybrid mode, please enter the API key"
+
+#: includes/class-admin.php:381
+msgid "برای استفاده از Provider سفارشی، لطفاً آدرس Endpoint را وارد کنید"
+msgstr "To use custom provider, please enter the endpoint URL"
